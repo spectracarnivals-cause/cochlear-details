@@ -757,6 +757,9 @@
       .section-header { flex-direction: column; gap: 12px; }
       .pain-grid { grid-template-columns: 1fr; }
       .pain-card.featured { grid-column: span 1; }
+      /* fix therapy card squeeze on mobile */
+      .pain-grid .pain-card[style] { max-width: 100% !important; margin: 0 !important; grid-column: 1 !important; }
+      
       .data-row { grid-template-columns: 1fr; gap: 40px; }
       .brain-grid { grid-template-columns: 1fr 1fr; }
       .cohort-wrap { grid-template-columns: 1fr; }
